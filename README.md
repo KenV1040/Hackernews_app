@@ -10,3 +10,5 @@ Essentially following along this [playlist](https://www.youtube.com/watch?v=KjE2
 
 For more detail on how I use these colours, look at hn_theme.dart in lib.
 
+## Project structure
+![Clean Architecture and TDD](https://octodex.github.com/images/yaktocat.png)
