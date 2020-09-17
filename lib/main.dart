@@ -38,19 +38,38 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
-      ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Text(
-              'You have pushed the button this many times:',
-            ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headline4,
+            Card(
+              child: Container(
+                constraints: BoxConstraints(
+                  maxHeight: 220,
+                  minHeight: 75,
+                  minWidth: MediaQuery.of(context).size.width,
+                ),
+                child: Column(
+                  children: [
+                    Expanded(
+                      flex: 2,
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: Colors.red,
+                          image: DecorationImage(
+                            image: NetworkImage("https://d.ibtimes.co.uk/en/full/1591650/hacking-computer.jpg"),
+                            fit: BoxFit.fill,
+                          ),
+                        ),
+                      ),
+                    ),
+                    Expanded(
+                      flex: 1,
+                      child: Text("Hello world", style: Theme.of(context).textTheme.headline3),
+                    )
+                  ],
+                ),
+              )
             ),
           ],
         ),

@@ -11,11 +11,7 @@ ThemeData buildDefaultTheme() {
     textTheme: buildDefaultTextTheme(base.textTheme),
     primaryColor: Color(0xFF7FB069), // Bud Green
     accentColor: Color(0xFF2B2D42), // Space Cadet
-    scaffoldBackgroundColor: Color(0xFFFAFFFD), // Baby Powder
-    cardTheme: CardTheme(
-        color: Color(0xFFEBE9E9), // Platinum
-        shadowColor: Color(0xFFE8F1E4) // Lighter Bud Green
-        ),
+    scaffoldBackgroundColor: Color(0xFFFAFFFD), // Baby Powder  q
     buttonColor: Color(0xFF7FB069), // Cerulean Crayola
   );
 }
@@ -25,24 +21,35 @@ TextTheme buildDefaultTextTheme(TextTheme base) {
     headline1: TextStyle(
       fontSize: 24,
       fontWeight: FontWeight.bold,
+      color: Colors.black,
     ),
     headline2: TextStyle(
       fontSize: 22,
       fontWeight: FontWeight.bold,
+      color: Colors.black,
     ),
     headline3: TextStyle(
       fontSize: 20,
       fontWeight: FontWeight.bold,
+      color: Colors.black,
     ),
     headline4: TextStyle(
       fontSize: 18,
       fontWeight: FontWeight.bold,
+      color: Colors.black,
     ),
     headline5: TextStyle(
       fontSize: 16,
       fontWeight: FontWeight.bold,
+      color: Colors.black,
     ),
-    bodyText1: TextStyle(fontSize: 14),
-    bodyText2: TextStyle(fontSize: 12),
+    bodyText1: TextStyle(
+      fontSize: 14,
+      color: Colors.black,
+    ),
+    bodyText2: TextStyle(
+      fontSize: 12,
+      color: Colors.black,
+    ),
   );
 }
