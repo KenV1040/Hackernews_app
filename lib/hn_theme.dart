@@ -1,22 +1,22 @@
 import 'package:flutter/material.dart';
 
-import 'package:flutter/material.dart';
-
 final ThemeData hnTheme = buildDefaultTheme();
 
 ThemeData buildDefaultTheme() {
+  final creuleanCrayola = Color(0xFF00A7E1);
   final ThemeData base = ThemeData.light();
   return base.copyWith(
     visualDensity: VisualDensity.adaptivePlatformDensity,
+    brightness: Brightness.light,
     textTheme: buildDefaultTextTheme(base.textTheme),
-    primaryColor: Color(0x7FB069), // Bud Green
-    accentColor: Color(0x2B2D42), // Space Cadet
-    scaffoldBackgroundColor: Color(0xFAFFFD), // Baby Powder
+    primaryColor: Color(0xFF7FB069), // Bud Green
+    accentColor: Color(0xFF2B2D42), // Space Cadet
+    scaffoldBackgroundColor: Color(0xFFFAFFFD), // Baby Powder
     cardTheme: CardTheme(
-        color: Color(0xEBE9E9), // Platinum
-        shadowColor: Color(0xE8F1E4) // Lighter Bud Green
+        color: Color(0xFFEBE9E9), // Platinum
+        shadowColor: Color(0xFFE8F1E4) // Lighter Bud Green
         ),
-    buttonColor: Color(0x00A7E1), // Cerulean Crayola
+    buttonColor: Color(0xFF7FB069), // Cerulean Crayola
   );
 }
 
