@@ -38,46 +38,46 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Card(
-              child: Container(
-                constraints: BoxConstraints(
-                  maxHeight: 220,
-                  minHeight: 75,
-                  minWidth: MediaQuery.of(context).size.width,
-                ),
-                child: Column(
-                  children: [
-                    Expanded(
-                      flex: 2,
-                      child: Container(
-                        decoration: BoxDecoration(
-                          color: Colors.red,
-                          image: DecorationImage(
-                            image: NetworkImage("https://d.ibtimes.co.uk/en/full/1591650/hacking-computer.jpg"),
-                            fit: BoxFit.fill,
-                          ),
-                        ),
+      body: CustomScrollView(
+        slivers: [
+        ],
+      ),
+    );
+  }
+
+
+  Widget hnCard(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.all(8.0),
+      child: Card(
+          child: Container(
+            constraints: BoxConstraints(
+              maxHeight: 220,
+              minHeight: 75,
+              minWidth: MediaQuery.of(context).size.width,
+            ),
+            child: Column(
+              children: [
+                Expanded(
+                  flex: 2,
+                  child: Container(
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.only(topLeft: Radius.circular(5), topRight: Radius.circular(5  )),
+                      color: Colors.red,
+                      image: DecorationImage(
+                        image: NetworkImage("https://d.ibtimes.co.uk/en/full/1591650/hacking-computer.jpg"),
+                        fit: BoxFit.fill,
                       ),
                     ),
-                    Expanded(
-                      flex: 1,
-                      child: Text("Hello world", style: Theme.of(context).textTheme.headline3),
-                    )
-                  ],
+                  ),
                 ),
-              )
+                Expanded(
+                  flex: 1,
+                  child: Text("Hello world", style: Theme.of(context).textTheme.headline3),
+                )
+              ],
             ),
-          ],
-        ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: Icon(Icons.add),
+          )
       ),
     );
   }
