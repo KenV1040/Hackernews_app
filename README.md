@@ -1,6 +1,6 @@
 # HackerNews
 
-An app focused on design and using HackerNews Api
+An app built with Flutter focused on design and using HackerNews Api
 
 Will be developed using the clean architecture and flutter bloc.
 
