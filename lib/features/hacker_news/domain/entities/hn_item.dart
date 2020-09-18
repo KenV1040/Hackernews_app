@@ -26,9 +26,11 @@ class HackerNewsItem extends Equatable {
     this.kids,
     this.url,
     this.score,
-    this.descendants}) : super([id,deleted,type,by,time,text,dead,parent,kids,url,score,descendants]);
+    this.descendants});
 
   @override
-  // TODO: implement props
-  List<Object> get props => throw UnimplementedError();
+  List<Object> get props => [id, deleted, type, by, time, text, dead, parent, kids, url, score, descendants];
+
+  @override
+  bool get stringify => true;
 }
