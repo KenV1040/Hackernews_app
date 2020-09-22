@@ -18,7 +18,7 @@ void main() {
   });
 
   // test number
-  final tGetStories = List<HackerNewsItem>(any);
+  final tGetStories = List<HackerNewsItem>();
 
   test('should get ids of best stories', () async {
     // arrange
