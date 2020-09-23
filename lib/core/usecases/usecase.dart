@@ -5,5 +5,5 @@ import '../error/failures.dart';
 abstract class UseCase<Type, Params> {
   // Turn this into a function and print the params if you want to log the
   // call parameter
-  Future<Either<Failure, Type>> call(Params params);
+  Future<Either<Failure, Type>> call();
 }
