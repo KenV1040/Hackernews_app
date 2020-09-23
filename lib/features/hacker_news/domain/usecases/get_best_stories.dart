@@ -8,7 +8,7 @@ class GetBestStory {
   final HackerNewsRepository repository;
   GetBestStory(this.repository);
 
-  Future<Either<Failure, List<HackerNewsItem> >> execute() async {
+  Future<Either<Failure, List<HackerNewsItem> >> call() async {
     return await repository.getBestStories();
   }
 }

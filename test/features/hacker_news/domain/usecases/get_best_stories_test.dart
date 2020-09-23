@@ -24,7 +24,7 @@ void main() {
     // arrange
     when(mock.getBestStories()).thenAnswer((_) async => Right(tGetStories));
     // act
-    final result = await useCase.execute();
+    final result = await useCase();
     // assert
     expect(
       result,
