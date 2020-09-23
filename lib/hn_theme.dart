@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 final ThemeData hnTheme = buildDefaultTheme();
 
 ThemeData buildDefaultTheme() {
-  final creuleanCrayola = Color(0xFF00A7E1);
+  //final creuleanCrayola = Color(0xFF00A7E1);
   final ThemeData base = ThemeData.light();
   return base.copyWith(
     visualDensity: VisualDensity.adaptivePlatformDensity,
