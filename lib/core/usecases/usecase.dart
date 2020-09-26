@@ -1,4 +1,5 @@
 import 'package:dartz/dartz.dart';
+
 import '../error/failures.dart';
 
 // Params allows you to log parameters in call
