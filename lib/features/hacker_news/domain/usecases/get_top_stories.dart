@@ -1,7 +1,7 @@
-import '../../../../core/error/failures.dart';
-import '../entities/hn_item.dart';
 import 'package:dartz/dartz.dart';
 
+import '../../../../core/error/failures.dart';
+import '../entities/hn_item.dart';
 import '../repositories/hn_repository.dart';
 import '../../../../core/usecases/usecase.dart';
 class GetTopStories implements UseCase<List<HackerNewsItem>, List>{
