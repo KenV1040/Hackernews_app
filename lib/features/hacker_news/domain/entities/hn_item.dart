@@ -1,5 +1,10 @@
 import 'package:equatable/equatable.dart';
 
+
+// Domain entity is not the same as data model
+// This is because you need to separate it so if you want to work with an xml interface
+// instead of json, you don't touch the entity at all. You only need to change the
+// parse of xml/json to a dart object
 class HackerNewsItem extends Equatable {
   final int id; // unique id
   final bool deleted; // true if item is deleted
