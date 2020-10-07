@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'hn_theme.dart';
+import 'features/hacker_news/hn_theme.dart';
 
 void main() {
   runApp(MyApp());

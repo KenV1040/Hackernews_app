@@ -21,12 +21,13 @@ void main() {
   group('fromJson', () {
     test('should return a valid model', () async {
       // arrange
-      final Map<String, dynamic> jsonMap = jsonDecode(fixture('live_data'));
-
+      final Map<String, dynamic> jsonMap = jsonDecode(fixture('live_data.json'));
+      
       //act
-
+      final result = HackerNewsModel.fromJson(jsonMap.values.toList()[0]);
       // assert
-
+      // you can ommit the equal if you expect it to be the same type
+      expect(result, equals(tHNModel));
     });
   });
 }
